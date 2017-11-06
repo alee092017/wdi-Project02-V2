@@ -1,0 +1,20 @@
+<% include ../partials/boilerplate %>
+
+<div class="jobapp-container">
+<% jobapps.forEach(jobapp => { %>
+  <div class="jobapp">
+    <div class="meta">
+      <span class="status"><%= jobapp.status %></span>
+      <span class="company"><%= jobapp.company %></span>
+      <span class="jobtitle"><%= jobapp.jobtitle %></span>
+      <span class="datesubmitted"><%= jobapp.datesubmitted %></span>
+      <span class="followup"><%= jobapp.followup %></span>
+      <span class="intcontactname"><%= jobapp.intcontactname %></span>
+      <span class="intcontactemail"><%= jobapp.intcontactemail %></span>
+      <span class="notes"><%= jobapp.notes %></span>
+    </div>
+  </div>
+<% }) %>
+</div>
+
+<% include ../partials/end %>

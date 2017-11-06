@@ -1,7 +1,8 @@
 const express = require('express');
-const jobappsRouter = express.Router();
 
-const jobappsController = require('../contollers/jobapps-controller';)
+const jobappsController = require('../controllers/jobapps-controller');
+
+const jobappsRouter = express.Router();
 
 jobappsRouter.get('/', jobappsController.index);
 

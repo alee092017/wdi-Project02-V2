@@ -24,8 +24,8 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-// const jobappsRoutes = require('./routes/jobapps-routes');
-//   app.use('/jobapps/', jobappsRoutes);
+const jobappsRoutes = require('./routes/jobapps-routes');
+  app.use('/jobapps/', jobappsRoutes);
 
 app.use('*', (req, res) => {
   res.status(404).send('404 NOT FOUND');

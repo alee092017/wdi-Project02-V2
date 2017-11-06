@@ -1,9 +1,9 @@
-const Jobapp = reqire('../models/jobapps');
+const Jobapp = require('../models/jobapps');
 
 const jobappsController = {};
 
 jobappsController.index = (req, res) => {
-  Jobapp.findall()
+  Jobapp.findAll()
   .then(jobapps => {
     res.status(200).render('jobapps/jobapps-index', {
       jobapps: jobapps,
