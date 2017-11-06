@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-// const flashcardRoutes = require('./routes/jobapps-routes');
+// const jobappsRoutes = require('./routes/jobapps-routes');
 //   app.use('/jobapps/', jobappsRoutes);
 
 app.use('*', (req, res) => {
